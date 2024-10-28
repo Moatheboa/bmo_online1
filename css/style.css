@@ -1,0 +1,228 @@
+body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: rgb(206, 189, 155);
+}
+
+main {
+    overflow-x: hidden;
+    background-color: rgb(206, 189, 155);
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    font-family: Georgia, "Times New Roman", Times, serif;
+    padding-bottom: 4em;
+    margin: 1em;
+}
+
+.mainHome {
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.mainHome h2 {
+    margin-bottom: 0;
+}
+
+.homeP {
+    font-style: italic;
+    text-align: center;
+    margin-top: 0.5em;
+}
+
+.mainObjects figure, .mainHome figure, .mainDetails figure {
+    margin-top: 2em;
+    background-color: rgb(92, 81, 81);
+    border: 1em solid rgb(92, 81, 81);
+    max-width: 250px;
+}
+
+figcaption {
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+.mainHome figcaption {
+    color: rgb(216, 191, 216);
+}
+
+.mainObjects h1, .mainArticles h1 {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.mainObjects p,
+.mainArticles p {
+    margin-bottom: 0;
+}
+
+.objectsOtput {
+    margin-top: 1em;
+}
+
+.row figure figcaption {
+    padding-top: 1em;
+}
+
+.row figure figcaption a {
+    text-decoration: none;
+    color: rgb(216, 191, 216);
+}
+
+.details {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.details p {
+    text-align: center;
+}
+
+.detailsText {
+    font-size: 1.5em;
+    color: rgb(158, 73, 180);
+}
+
+.mainArticles ul {
+    margin-top: 2em;
+    list-style-type: none;
+}
+
+.mainArticles a {
+    color: rgb(158, 73, 180);
+    line-height: 1.5em;
+}
+
+.mainArticles a:hover {
+    font-weight: bold;
+}
+
+.mainFullArticle {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    margin: 1em;
+}
+
+.twoCols {
+    max-width: 100%;
+}
+
+.MaggyArticle {
+    max-width: 100%;
+}
+
+.article {
+    overflow-x: hidden;
+    max-width: 90%;
+}
+
+.mainFullArticle h1 {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.MaggyPhotos figure {
+    max-width: 100%;
+    overflow: hidden;
+    margin-top: 1.2em;
+    margin-bottom: 0;
+    padding-bottom: 0.5em;
+}
+
+.MaggyPhotos img {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.MaggyPhotos figcaption {
+    text-align: center;
+    font-style: italic;
+    font-size: 0.8em;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+
+.article h1 {
+    text-align: center;
+    margin-bottom: 0.2em;
+}
+
+.info {
+    text-align: center;
+    margin-top: 0;
+    font-size: 1em;
+    font-style: italic;
+    margin-bottom: 2em;
+}
+
+@media (min-width: 768px) {
+
+    .main {
+        min-height: 100vh;
+    }
+
+    .homeDiv {
+        display: flex;
+    }
+
+    .mainHome h2 {
+        font-size: 3em;
+    }
+
+    .mainHome h1 {
+        font-size: 3em;
+        margin: 1em;
+        margin-top: 2em;
+    }
+
+    .homeP {
+        font-size: 2em;
+        max-width: 700px;
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .mainObjects p,
+    .mainArticles p {
+        font-size: 1.5em;
+        margin-top: 0.5em;
+}
+
+    .mainObjects h1, .mainArticles h1 {
+        margin-top: 1.5em;
+        margin-bottom: 0.5em;
+    }
+
+    .mainArticles a {
+        font-size: 2em;
+        line-height: 1.8em;
+    }
+
+    .twoCols {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .MaggyPhotos {
+        width: calc(100% / 16 * 6);
+        margin-top: 3em;
+    }
+
+    .MaggyArticle {
+        display: flex;
+        width: calc(100% / 16 * 10);
+        justify-content: right;
+    }
+
+
+    .article {
+        max-width: 35em;
+        font-size: 1.2em;
+        margin: 3em;
+    }
+}
